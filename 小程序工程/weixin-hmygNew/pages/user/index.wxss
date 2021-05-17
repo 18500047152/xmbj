@@ -1,0 +1,112 @@
+/* pages/user/index.wxss */
+page {
+  height: 100%;
+  background-color: #edece8;
+}
+.user_wiew {
+  height: 45%;
+  background-color: #eb4450;
+  overflow: hidden;
+}
+.user_wiew .user_view_allImage {
+  height: 100%;
+  position: relative;
+}
+.user_wiew .user_view_allImage .big_image {
+  height: 105%;
+  margin-right: 5rpx;
+  filter: blur(8rpx);
+}
+.user_wiew .user_view_allImage .samll_image_user {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  top: 30%;
+  text-align: center;
+}
+.user_wiew .user_view_allImage .samll_image_user .samll_image {
+  width: 100rpx;
+  border-radius: 50%;
+}
+.user_wiew .user_view_allImage .samll_image_user .user_name {
+  margin-top: 10rpx;
+  color: #fff;
+}
+.user_wiew .login_view {
+  width: 40%;
+  margin: 100rpx auto;
+}
+.user_wiew .login_view navigator {
+  width: 100%;
+}
+.user_wiew .login_view navigator .login_button {
+  width: 100%;
+  letter-spacing: 10rpx;
+  border-radius: 10rpx;
+}
+.user_content {
+  position: relative;
+  min-height: 55%;
+}
+.user_content .user_content_main {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -70rpx;
+}
+.user_content .user_content_main .shouCang {
+  display: flex;
+  text-align: center;
+  background-color: #fff;
+}
+.user_content .user_content_main .shouCang navigator {
+  flex: 1;
+  padding: 10rpx 0;
+}
+.user_content .user_content_main .shouCang navigator .num_ber {
+  color: #eb4450;
+}
+.user_content .user_content_main .my_order {
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+.user_content .user_content_main .my_order .my_order_title {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.user_content .user_content_main .my_order .my_order_content {
+  display: flex;
+  text-align: center;
+}
+.user_content .user_content_main .my_order .my_order_content navigator {
+  padding: 20rpx;
+  flex: 1;
+  padding: 10rpx 0;
+}
+.user_content .user_content_main .my_order .my_order_content navigator .view_name {
+  color: #333;
+}
+.user_content .user_content_main .view_address,
+.user_content .user_content_main .view_fenXiang {
+  margin: 15rpx 0;
+  padding: 15rpx;
+  background-color: #fff;
+  color: #666;
+}
+.user_content .user_content_main .view_kefu_mobile,
+.user_content .user_content_main .view_yijian,
+.user_content .user_content_main .view_guanyu {
+  padding: 15rpx;
+  background-color: #fff;
+  color: #666;
+}
+.user_content .user_content_main .view_kefu_mobile {
+  overflow: hidden;
+}
+.user_content .user_content_main .left {
+  float: left;
+}
+.user_content .user_content_main .right {
+  float: right;
+}

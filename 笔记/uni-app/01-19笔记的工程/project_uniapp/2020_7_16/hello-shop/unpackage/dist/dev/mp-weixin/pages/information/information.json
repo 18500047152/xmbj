@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "优购资讯",
+  "usingComponents": {
+    "news-list": "/components/newsList/newsList"
+  }
+}

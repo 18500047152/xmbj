@@ -1,0 +1,6 @@
+/* pages/xiaoChengXuMa/xiaoChengXuMa.wxss */
+.zizujian{
+  background-color: tomato;
+  text-align: center;
+  padding:10rpx 0;
+}

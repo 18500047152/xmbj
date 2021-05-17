@@ -1,0 +1,18 @@
+<!--pages/for/for.wxml-->
+<navigator url="../index/index?id=100&type=10" open-type="reLaunch">
+去首页
+</navigator>
+<view class="for">我是for循环</view>
+<view wx:for="{{list}}"
+      wx:for-item="item"
+      wx:for-index="index"
+      wx:key="*this"
+>
+<view>我的id是:{{item.id}}</view>
+<view>我的name是:{{item.name}}</view>
+</view>
+<view class="hotPink {{isTrue?'newColor':false}}" bindtap="goClick" data-index='{{5}}'>我是测试的粉盒子,我有点击事件,带index参数</view>
+ 
+<view class="{{col}}" style="background-color:green">
+            测试文字大小以及颜色
+</view>

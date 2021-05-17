@@ -1,0 +1,137 @@
+/* pages/cart/index.wxss */
+page{
+  padding-bottom: 100rpx;
+}
+.cart_address_SHR{
+  display: flex;
+  border-bottom: 1rpx solid #eb4450;
+ 
+  .address_left{
+      flex:2;
+      border-right: 2rpx solid #ccc;
+      .address_name,.address_address{
+          padding: 10rpx;
+      }
+  }
+  .address_right_mobil{
+      flex:1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
+
+}
+// 这是购物车下面的商品样式
+.cart_box {
+ // border-bottom: 1px solid #eb4450;
+
+  .cart_title {
+      padding: 20rpx;
+      font-size: 36rpx;
+      color: var(--moRemColor);
+
+      border-bottom: 1rpx solid #eb4450;
+  }
+
+  .cart_content {
+     
+    .cart_content_item {
+        display: flex;  
+        border-bottom: 1rpx solid #eb4450;
+      .cart_image {
+          flex: 2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        navigator {
+          width: 100%;
+          text-align: center;
+          image {
+                  width: 80%;
+          }
+        }
+      }
+      .cart_spxx {
+          flex: 5;
+          
+        .shangpin_name {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+          color: #666;
+        }
+
+        .shangpin_jiage {
+          color: #eb4450;
+          font-size: 36rpx;
+          font-weight: 900;
+          float: left;
+          margin-top: 30rpx;
+        }
+
+        .shangpin_num_all {
+          padding:10rpx 20rpx;
+          float: right;
+           display: flex;
+          .shangpin_num {
+              flex: 1;
+              
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin: 0rpx 20rpx;
+              margin-top: 30rpx;
+          }
+         
+        }
+      }
+    }
+  }
+}
+.buttom_total{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 100rpx;
+   display: flex;
+   border-top: 1rpx solid #eb4450;
+   .heji,.jiesuan{
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+  
+   .heji{
+      // text-align: right;
+      justify-content: flex-end;
+   }
+   .jine{
+    flex: 1;
+     text-align: center;
+      // flex-wrap: wrap; 
+      // justify-content: center;
+      .renminbi{
+          color: #eb4450;
+          font-size: 40rpx;
+      }
+      .yunfei{
+          font-size: 22rpx;
+      }
+   }
+   .jiesuan{
+     background-color: #eb4450;
+     color: white;
+   }
+}
+//  没有商品的时候样式
+.now_shangPin_view{
+width: 50%;
+margin: 10rpx auto;
+padding: 30rpx;
+color: #eb4450;
+border: 1px solid #ccc;
+}

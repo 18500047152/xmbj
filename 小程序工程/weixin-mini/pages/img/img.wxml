@@ -1,0 +1,5 @@
+<!--pages/img/img.wxml-->
+<image class="image_cl" src="{{newSrc}}" mode="widthFix" lazy-load="false" binderror="" bindload="">
+  
+</image>
+<button id="btn" bindtap="upImage">上传图片</button>

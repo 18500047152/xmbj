@@ -1,0 +1,54 @@
+
+page.data-v-df578ec8{
+		height: 100%;
+}
+.pic.data-v-df578ec8{
+	height: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+.left.data-v-df578ec8{
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		        flex: 1;
+		height: 100%;
+		border-right:2rpx solid #eee;
+		text-align: center;
+		color: #333;
+}
+.left view.data-v-df578ec8{
+	height: 120rpx;
+	line-height: 120rpx;
+	border-top:2rpx solid #eee;
+}
+.right.data-v-df578ec8{
+		-webkit-box-flex: 2;
+		-webkit-flex: 2;
+		        flex: 2;
+		height: 100%;
+		padding: 10rpx;
+}
+.right image.data-v-df578ec8{
+	width: 460rpx;
+	height: 460rpx;
+	border-radius:40rpx;
+	display: block;
+	margin: 0 auto;
+}
+.right text.data-v-df578ec8{
+	display: inline-block;
+	margin: 20rpx 0;
+}
+	/* 左侧scrll栏,第一个上边框 */
+.number-one.data-v-df578ec8{
+	border-top: 2px solid #EEEEEE;
+}
+.active.data-v-df578ec8{
+	background-color: #B50E03;
+	color: #FFFFFF;
+}
+.over.data-v-df578ec8{
+	color: #333;
+}
+

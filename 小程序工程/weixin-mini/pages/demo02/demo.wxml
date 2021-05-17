@@ -1,0 +1,32 @@
+<!--pages/demo02/demo.wxml-->
+<tab-switch tabTitle="{{categories}}" curIndex="0" bindtabChange="tabChangeIndex">
+ 
+  <view hidden="{{idx!=0}}">
+    00000
+  </view>
+  <view hidden="{{idx!=1}}">
+    111111
+  </view>
+  <view hidden="{{idx!=2}}">
+    222222
+  </view>
+  <view hidden="{{idx!=3}}">
+    333333
+  </view>
+  <view hidden="{{idx!=4}}">
+    444444
+  </view>
+ 
+  <view hidden="{{idx!=5}}">
+    555555
+  </view>
+ 
+  <!-- for循环模式 -->
+  <view wx:for="{{categories}}" wx:for-index="idxs" wx:key="*this">
+    <view hidden='{{idx!=idxs}}'>
+      {{idxs}}*-{{item.title}}*-{{item.id}}
+    </view>
+  </view>
+ 
+</tab-switch>
+ 

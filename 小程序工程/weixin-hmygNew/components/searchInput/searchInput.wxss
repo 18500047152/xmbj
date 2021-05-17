@@ -1,0 +1,17 @@
+.search_view {
+  height: 90rpx;
+  background-color: #eb4450;
+  padding: 10rpx;
+}
+.search_view .search_navigator {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10rpx;
+  color: #666;
+}
+.search_view .search_navigator .f-sousuo {
+  margin-left: 10rpx;
+}

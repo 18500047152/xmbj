@@ -1,0 +1,17 @@
+/* pages/for/for.wxss */
+.for{
+  text-align: center;
+  color: white;
+  background-color: tomato;
+}
+.hotPink{
+
+  height: 50rpx;
+  background-color: hotpink;
+}
+.newColor{
+  color: white;
+}
+.fz{
+  font-size: 50rpx;
+}

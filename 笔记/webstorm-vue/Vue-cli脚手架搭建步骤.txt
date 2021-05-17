@@ -1,0 +1,106 @@
+Vue-cli脚手架搭建:
+
+
+
+拿到新电脑第一次配置环境要做的步骤(以前没有配置过环境):
+
+
+安装npm命令:
+	
+
+1.去nodejs官网下载node.exe  官网地址:https://nodejs.org/zh-cn/
+
+2. node-v8.9.4-x64.msi  右键---安装  纯英文目录!!!!!!!!!!!!!!!!!!!
+
+3.一路 next 下一步即可     finish完成后 没有界面!!!
+
+4.win+R 打开cmd  输入 npm回车  出来一堆英文 没有表示命令不存在 就表示安装成功
+
+
+
+安装npm的镜像命令cnpm:
+
+由于npm命令 下载是走的国外网站  
+某些时候会很慢 所以中国团队推出了一个"淘宝镜像"  号称国外网站上线的 
+十分钟之内 淘宝镜像同步上线  命令是cnpm   npm命令怎么用 cnpm命令就怎么用
+
+
+1.打开cmd  输入命令:  npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+2.等进度走完没有出现一堆 error 表示安装成功
+
+3.输入cnpm回车 出现一堆非 error的英文表示安装成功
+
+
+
+安装Vue命令(脚手架命令的安装):
+
+1.打开cmd 输入命令  npm/cnpm install vue-cli -g   
+	这句话表示全局安装vue脚手架命令(vue命令)
+
+2.开始走进度  等到进度走完 没有出现一堆error 表示安装成功
+
+3.输入命令 vue -V  注意空格和大写  如果现实版本号 表示安装成功
+
+4.vue命令安装成功!
+
+
+
+以后每次新创建一个vue项目时要做的步骤:
+
+1.在本地自己创建一个项目存放的文件夹
+
+2.用cmd切换到这个目录:
+	切换命令:  1.先切换盘符  d:  2.cd 文件夹的路径 回车
+
+3.输入命令 vue-init webpack 自己起一个英文的项目名称(名称纯小写英文开头的名字)
+
+4.等待几吸的时间  开始调查问卷的方式  搭建项目
+
+? Project name (myfirst)  当前项目的名称 括号为默认 直接回车表示选择默认
+
+
+? Project description (A Vue.js project) 项目描述  直接回车
+
+? Author   项目作者  直接回车
+
+出现一堆英文  直接回车  Vue build standalone
+
+? Install vue-router? (Y/n) 是否安装 vue-router  输入Y 回车 必须安装
+
+? Use ESLint to lint your code? (Y/n) 严格模式的格式检查  不安装  输入n回车
+
+
+? Set up unit tests (Y/n)  是否安装单元测试  输入n回车
+
+? Setup e2e tests with Nightwatch? (Y/n) 是否安装端对端测试  不安装  输入n回车
+
+
+  Yes, use NPM   使用npm自动安装依赖(第三方库)
+> Yes, use Yarn  使用yarn 自动安装依赖
+  No, I will handle that myself    我自己手动操作 
+
+
+	 这一步骤 可以上下按键进行选择  我们一般选择第一个 但是npm太慢  所以选择第三个 回车
+
+
+To get started:
+
+  cd myfirst
+  npm install (or if using yarn: yarn)
+  npm run dev
+
+
+
+5.按照提示 cd 到指定路径( cd myfirst)
+
+6.cnpm/npm  install 回车
+
+7.没有出现一堆error表示依赖下载成功!
+
+8.输入命令  npm run dev  回车  启动vue项目
+
+
+
+
+

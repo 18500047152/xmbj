@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "uni-calendar": "/components/uni-calendar/uni-calendar",
+    "test": "/components/test",
+    "test-a": "/components/testA",
+    "test-b": "/components/testB"
+  }
+}

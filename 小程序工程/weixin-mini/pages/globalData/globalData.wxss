@@ -1,0 +1,7 @@
+/* pages/globalData/globalData.wxss */
+.nav{
+  padding-top: 20rpx;
+  border-top: 10rpx solid #e4293c;
+  margin-top: 20rpx;
+  color: #e4293c;
+}

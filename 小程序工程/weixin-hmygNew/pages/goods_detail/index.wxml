@@ -1,0 +1,64 @@
+<view class="goods_detail_view">
+  <!-- 轮播图开始 -->
+  <swiper autoplay="{{true}}" interval="2000" circular indicator-dots="{{true}}" indicator-color="#999" indicator-active-color="#eb4450">
+    <!-- 遍历数组 -->
+    <swiper-item wx:for="{{goodsObj.pics}}" wx:for-item="item" wx:for-index="index" wx:key="*this" bind:tap="headPreviewImage" data-index="{{index}}">
+      <image class="" src="{{item.pics_mid}}" mode="aspectFit" lazy-load="false" binderror="" bindload=""></image>
+    </swiper-item>
+  </swiper>
+  <!-- 轮播图结束 -->
+  <!-- 价格 -->
+  <view class="view_price">¥{{goodsObj.goods_price}}</view>
+  <!-- 商品名称以及收藏 -->
+  <view class="view_all">
+    <view class="view_name">{{goodsObj.goods_name}}</view>
+    <view class="view_shoucang">
+      <text class="iconfont {{isCollect?'icon-shoucang2':'icon-shoucangsel'}}"
+      bind:tap="handleisCollect"
+      ></text>
+      <!-- 开始写,商品的收藏功能 -->
+      <view>收藏</view>
+    </view>
+  </view>
+  <!-- 图文详情 -->
+  <view class="tuwenxiangqing">
+    <view class="title">图文详情</view>
+    <view class="content">
+      <!-- 富文本直接渲染,是标签字符串,不行,必须加富文本标签 
+       正确写法:<rich-text class="" nodes="{{goodsObj.goods_introduce}}"> </rich-text>
+      报错:{{goodsObj.goods_introduce}} -->
+      <rich-text class="" nodes="{{goodsObj.goods_introduce}}"></rich-text>
+    </view>
+  </view>
+  <!-- 工具栏 联系客服 购买,分享 -->
+  <view class="gongJuLan_view">
+    <view class="gongJuLan_view_item">
+      <view class="iconfont icon-kefu"></view>
+      <view class="">联系客服</view>
+      <!-- 联系客服按钮 -->
+      <button open-type="contact" >
+      </button>
+    </view>
+    <view class="gongJuLan_view_item">
+      <view class="iconfont icon-fenxiang-"></view>
+      <view class="">点击分享</view>
+      <!-- 注意下那边的样式 -->
+      <button open-type="share">
+      </button>
+    </view>
+    <!-- 购物车页面是tabbar页面,请注意跳转方式 -->
+    <navigator url="../../pages/cart/index" class="gongJuLan_view_item" 
+    open-type="switchTab"
+    bind:tap="cs"
+    >
+      <view class="iconfont icon-qicheqianlian-"></view>
+      <view class="">+购物车</view>
+    </navigator>
+    <view class="gongJuLan_view_item gwc" bindtap="JiaRuGWC">
+     加入购物车
+    </view>
+    <view class="gongJuLan_view_item ljgm" bindtap="goCart">  
+     立刻购买
+    </view>
+  </view>
+</view>

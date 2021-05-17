@@ -1,0 +1,14 @@
+<view class='nav' style='height: {{status + navHeight}}px; background:#ccc'>
+    <view class='status' style='height: {{status}}px;'></view> 
+    <view class='navbar' style='height:{{navHeight}}px; line-height:{{navHeight}}px;'>
+        <view bindtap='back' decode='true'>
+          <navigator url="../../../pages/me/index" open-type="switchTab">
+            <!-- 随便放的小箭头 -->
+            {{jiantou}}
+          </navigator>
+        </view>
+        <view class='nav-title'>
+            <text style='{{textStyle}}'>我是自定义导航栏</text>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,32 @@
+
+<!-- <view class="box" hover-class="newBox">我是个view-box</view>
+<image src="/images/v001.jpg" show-menu-by-longpress></image> -->
+<scroll-view scroll-x scroll-left="200">
+   <view class="all-view" >
+    <view class="view-item">0</view>
+     <view class="view-item">1</view>
+      <view class="view-item">2</view>
+       <view class="view-item">3</view>
+        <view class="view-item">4</view>
+         <view class="view-item">5</view>
+          <view class="view-item">6</view>
+           <view class="view-item">7</view>
+            <view class="view-item">8</view>
+             <view class="view-item">9</view>
+   </view>
+</scroll-view>
+
+<!-- <scroll-view scroll-x>
+   <view class="all-view">
+    <view class="view-item">0</view>
+     <view class="view-item">1</view>
+      <view class="view-item">2</view>
+       <view class="view-item">3</view>
+        <view class="view-item">4</view>
+         <view class="view-item">5</view>
+          <view class="view-item">6</view>
+           <view class="view-item">7</view>
+            <view class="view-item">8</view>
+             <view class="view-item">9</view>
+   </view>
+</scroll-view> -->

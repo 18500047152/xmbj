@@ -1,0 +1,48 @@
+<view class="box_view">
+  <!-- 搜索框开始 -->
+  <searchInput></searchInput>
+  <!-- 搜索框结束 -->
+  <!-- 轮播图开始 -->
+  <view class="swiper_view">
+    <swiper autoplay="{{true}}" interval="5000" circular indicator-dots="{{true}}" indicator-color="#999" indicator-active-color="#eb4450">
+      <swiper-item wx:for="{{swiperList}}" wx:for-item="item" wx:for-index="index" wx:key="*this">
+       <!-- 数据接口item.navigator_url值是/pages/goods_detail/main?goods_id=129 跟咱们的detail/index路径地址不一样,跳转不了 -->
+        <navigator class="" target="" url="../goods_list/index">
+          <image src="{{item.image_src}}" mode="widthFix" />
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 轮播图结束 -->
+  <!-- 导航页开始 -->
+  <view class="cate_view">
+    <view class="cate_view_item" wx:for="{{cateList}}" wx:for-item="item" wx:for-index="index" wx:key="*this">
+       <!-- 数据接口item.navigator_url跳不了,只能往死页面跳了 -->
+      <navigator url="../goods_list/index" open-type="navigate">
+        <image class="" src="{{item.image_src}}" mode="widthFix"></image>
+      </navigator>
+    </view>
+  </view>
+  <!-- 导航页结束 -->
+  <!-- 导航页下面的楼层模块开始 -->
+  <view class="floor_view">
+    <view class="floor_view_item" wx:for="{{floorList}}" wx:for-item="item1" wx:for-index="index1" wx:key="*this">
+   
+        <!--时尚女孩 户外运动 箱包配饰 等标题 -->
+        <image class="image_header" src="{{item1.floor_title.image_src}}" mode="widthFix"></image>
+        <!--时尚女孩 户外运动 箱包配饰 内部的内容,有点击跳转,所以放入navigator里面 -->
+        <navigator open-type="navigate"
+        wx:for="{{item1.product_list}}" 
+        wx:for-item="item2" 
+        wx:for-index="index2" 
+        wx:key="*this"
+  >       
+            <image class="image_body" src="{{item2.image_src}}" mode="{{index2===0?'widthFix':'scaleToFill'}}" >    
+            </image>
+          
+      </navigator>
+    </view>
+  </view>
+  <!-- 导航页下面的楼层模块结束 -->
+  <!-- 清除浮动 -->
+</view>

@@ -1,0 +1,58 @@
+1.找一个文件夹输入命令  vue create 项目名称
+
+开始调查问卷的方式创建项目:
+
+
+1.Please pick a preset:
+default (babel, eslint) 使用默认的babel(es6编译器) eslint(严格工具)
+Manually select features 手动选择配置项 (选这个)
+
+
+2.? Check the features needed for your project: (Press <space> to select, <a> to toggle all, <i> to invert selection)
+>(*) Babel	(es6编译器)
+ ( ) TypeScript  (一个跟js很像的 脚本语言)
+ ( ) Progressive Web App (PWA) Support (Web APP支持 暂时不用)
+ (*) Router (Vue-router)
+ (*) Vuex  (状态管理仓库)
+ (*) CSS Pre-processors (css预编译  sass  less)
+ () Linter / Formatter (代码风格、格式校验) 格式校验工具
+ ( ) Unit Testing (单元测试)
+ ( ) E2E Testing (端对端测试)
+
+上下选择  空格添加* 表示选中  回车 下一步
+
+
+3.Use history mode for router? (Requires proper server setup for index fallback in production) (Y/n)
+	n 就是 默认的hash
+
+
+4.Pick a CSS pre-processor (PostCSS, Autoprefixer and CSS Modules are supported by default): (Use arrow keys)
+Sass/SCSS (with dart-sass)
+Sass/SCSS (with node-sass)
+Less
+Stylus
+
+选择 css预编译的框架  sass  less  Stylus
+
+5.? Where do you prefer placing config for Babel, ESLint, etc.? (Use arrow keys)
+> In dedicated config files
+  In package.json
+
+
+本次所选择的配置保存的位置在哪?
+In dedicated config files 单独的配置文件
+  In package.json  在package.json文件里面保存
+
+
+6.Save this as a preset for future projects? (y/N)
+	当前所选的配置套餐 是否保存 为了将来能够快速选择
+
+
+
+
+项目启动:
+
+	命令:   npm  run serve
+	
+
+

@@ -1,0 +1,5 @@
+<!--pages/globalData/globalData.wxml-->
+
+<view>我的名字是:{{name}}</view>
+<navigator class="nav" url="../globalData1/globalData1"
+>我是跳转测试:当前页面globalData值修改了--在另一个页面,globalData全局的值有没有修改</navigator>

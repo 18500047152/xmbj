@@ -1,0 +1,7 @@
+<!--pages/login/index.wxml-->
+<view id="login_view">
+
+       <button class="getUserInfo_button" type="primary" plain="{{true}}" open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">
+  登录
+</button>
+</view>

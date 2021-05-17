@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "zujian":"../../components/Tabs/tabs"
+
+  }
+}

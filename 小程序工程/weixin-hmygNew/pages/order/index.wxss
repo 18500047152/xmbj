@@ -1,0 +1,19 @@
+.box_view {
+  border-bottom: 1rpx solid #ccc;
+}
+.box_view .yi,
+.box_view .er,
+.box_view .san {
+  display: flex;
+  padding: 15rpx;
+}
+.box_view .left {
+  flex: 1;
+}
+.box_view .right {
+  flex: 3;
+  text-align: right;
+}
+.box_view .er .right {
+  color: #eb4450;
+}

@@ -1,0 +1,11 @@
+<!--components/searchInput/searchInput.wxml-->
+<view class="search_view">
+  <navigator class="search_navigator" target="" url="../../pages/search/index"  open-type="navigate">
+      <!-- <icon color="rgba(180,180,180,1)" size="23" type="search"></icon>搜索 -->
+        <!-- <text class="iconfont icon-mine"></text> -->
+        <icon color="rgba(180,180,180,1)" size="23" type="search"></icon>
+        <text class="f-sousuo">搜索</text>
+  </navigator>
+  
+</view>
+ 

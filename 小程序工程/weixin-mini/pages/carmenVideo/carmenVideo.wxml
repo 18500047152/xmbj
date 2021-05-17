@@ -1,0 +1,13 @@
+<view class="carmen" >
+  <button class="btn_d"bindtap="bindCamera" wx:if="{{isOpenCamera}}">打开相机</button>
+  <camera class="carmen_pz" wx:if="{{isCamera}}">  
+  </camera>
+  <button class="btn_p" bindtap="bind_Cameta_tital">{{tital}}</button>
+  <button class="btn_q" bindtap="close">关闭</button>
+  <view class="xiangC"> 
+       <video src="{{videoUrl}}"></video>
+  </view>
+  <view class="overImage">
+  <video style="{{!isOpenCamera?'margin-top:88rpx':''}}" src="{{videoUrl}}"></video>
+  </view>
+</view>

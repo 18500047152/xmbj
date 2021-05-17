@@ -1,0 +1,44 @@
+/* pages/goods_list/index.wxss */
+.tabs_first {
+  .tabs_navigator {
+    display: flex;
+    border-bottom: 1px solid rgb(173, 147, 147);
+    .view_left {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      image {
+        width: 70%;
+      }
+    }
+
+    .view_right {
+      flex: 3;
+      // 设置商品详情与价格的效果
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      line-height: 60rpx;
+     
+      .shangpin_mingcheng {
+        //文本溢出,多余的文字隐藏-webkit-line-clamp: 1;几行显示
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        word-break: break-all;
+        text-overflow: ellipsis;
+        margin-top: 40rpx;
+
+      }
+
+      .shangpin_jiage {
+        color: var(--moRenColor);
+        font-size: 32rpx;
+      }
+    }
+  }
+
+}

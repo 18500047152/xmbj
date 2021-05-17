@@ -1,0 +1,54 @@
+
+<view class="box_view">
+    <!-- input搜索框开始 -->
+    <searchInput></searchInput>
+    <!-- input搜索框结束 -->
+    <view class="scroll_box">
+          <scroll-view class="scroll_box_left" scroll-y="{{true}}" >
+              <!--左边内容是一层循环  -->
+              <view class="scroll_box_left_content {{index===leftIndex?'active':''}}"
+                wx:for="{{leftcateList}}"
+                wx:for-item="item"
+                wx:for-index="index"
+                wx:key="*this"
+              bindtap="headleltemTao"
+              data-index="{{index}}"
+              >{{item}}</view>
+          </scroll-view>
+              <!--右边内容是二层循环  -->
+          <scroll-view class="scroll_box_right" scroll-top="{{gunDongTiao_index}}" scroll-y="{{true}}">
+              <view class="scroll_box_right_content"
+               wx:for="{{rightcateList}}"
+                wx:for-item="item1"
+                wx:for-index="index1"
+                wx:key="*this"
+              >
+                <!--右边内容的头部主题  -->
+                    <view class="scroll_box_right_content_header" > 
+                      {{item1.cat_name}} 
+                    </view>
+                     <!--右边内容的头部内容  -->
+                    <view class="scroll_box_right_content_body"
+                    > 
+                   <navigator class="scroll_box_right_content_body_navigator" 
+                   wx:for="{{item1.children}}"
+                    wx:for-item="item2"
+                    wx:for-index="index2"
+                    wx:key="*this"
+                   url="../goods_list/index?cat_id={{item2.cat_id}}"
+                   >
+                <!-- ↑url是跳转到商品详情页 -->
+                 <!-- 商品图片 -->
+                      <image class="scroll_box_right_content_body_image" src="{{item2.cat_icon}}" mode="widthFix" >     
+                      </image>
+                 <!-- 商品名称 -->     
+                 <view class="scroll_box_right_content_body_name">
+                   {{item2.cat_name}}
+                 </view>
+             </navigator>
+                    </view>
+              </view>
+          </scroll-view>
+      
+    </view>
+</view>

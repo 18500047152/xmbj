@@ -1,0 +1,46 @@
+page {
+  height: 100%;
+}
+.box_view {
+  height: 100%;
+}
+.box_view .scroll_box {
+  height: calc(100% - 90rpx);
+  display: flex;
+}
+.box_view .scroll_box .scroll_box_left {
+  flex: 2;
+}
+.box_view .scroll_box .scroll_box_left .scroll_box_left_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0e9e9;
+  padding: 20rpx 0;
+}
+.box_view .scroll_box .scroll_box_left .active {
+  color: var(--moRenColor);
+  background-color: white;
+  border-left: 5rpx solid "var(--moRenColor)";
+}
+.box_view .scroll_box .scroll_box_right {
+  flex: 5;
+}
+.box_view .scroll_box .scroll_box_right .scroll_box_right_content_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx 0;
+}
+.box_view .scroll_box .scroll_box_right .scroll_box_right_content_body {
+  display: flex;
+  flex-wrap: wrap;
+}
+.box_view .scroll_box .scroll_box_right .scroll_box_right_content_body .scroll_box_right_content_body_navigator {
+  width: 33%;
+  padding: 20rpx;
+  text-align: center;
+}
+.box_view .scroll_box .scroll_box_right .scroll_box_right_content_body .scroll_box_right_content_body_navigator .scroll_box_right_content_body_image {
+  width: 50%;
+}

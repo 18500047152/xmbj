@@ -1,0 +1,28 @@
+<!-- pages/feedback/index.wxml -->
+<view class="goods_list_view">
+  <tabs fu_tabs="{{tabs}}" bindsonIndex="sonIndex">
+    <view class="fu_main">
+      <view class="title">
+        问题的种类
+      </view>
+      <view class="title_yiJian">
+        <text >功能建议</text>
+        <text >购买遇到的问题</text>
+        <text >性能问题</text>
+        <text >其他</text>
+      </view>
+      <view class="content">
+        <textarea name="" id="" cols="30" rows="10" placeholder="亲:请描述一下您的问题~">
+          
+        </textarea>
+        <view class="content_img">
+          <button class="btn">+</button>
+        </view>
+      </view>
+      <view class="tijiao">
+        √ 提交
+      </view>
+    </view>
+  </tabs>
+  <!-- 引入自定义子组件结束 -->
+</view>

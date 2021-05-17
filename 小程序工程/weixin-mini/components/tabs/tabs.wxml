@@ -1,0 +1,25 @@
+<view class="tabs">
+      <view class="tabs_title">
+        <!-- <view class="active">首页</view>
+          <view>原创</view>
+            <view>分类</view>
+                <view>关于</view>-->     
+        <view    
+      wx:for="{{tabs}}"
+     
+      wx:key="id"
+      class="{{item.isTrue?'active':''}}"
+      bindtap="headerTap"
+      data-index="{{index}}"
+      >
+      {{item.isTrue}}
+      {{item.name}}
+      </view>
+      
+      </view> 
+    
+      <view class="tabs_content">
+      <!-- 在自定义组件[子组件]添加slot插槽功能--完成点击不同标题显示不同的内容 -->
+      <slot></slot>
+      </view>
+</view>

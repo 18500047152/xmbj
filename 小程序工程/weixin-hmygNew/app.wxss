@@ -1,0 +1,33 @@
+@import "/styles/iconfont.wxss";
+/* 
+1:border-box 告诉浏览器去理解你设置的边框和内边距的值是包含在width内的。也就是说，
+如果你将一个元素的width设为100px,那么这100px会包含其它的border和padding，
+内容区的实际宽度会是width减去border + padding的计算值。大多数情况下这使得我们更容易的去设定一个元素的宽高。 
+2:小程序中*号无效,所有设置样式初始化的时候,都把所有的标签写上去,button不建议加上初始化
+*/
+page,view,text,swiper,swiper-item,image,navigator{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 
+1:定义主题颜色
+  --moRenColor:#eb4450;
+  通过变量的方式进行定义,使用时?在使用的页面index.wxss
+  view{
+  color: var(--moRenColor); 
+  }
+  进行使用
+2:定义字体使用
+  假设一张设计稿375px  750rpx
+  1px=2rpx
+  14px=28rpx
+  
+*/
+page{
+  --moRenColor:#eb4450;
+  font-size: 28rpx;
+}
+image{
+  width: 100%;
+}

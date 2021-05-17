@@ -1,0 +1,1 @@
+<view class="box data-v-46b43a70"><goods-list vue-id="e058d6d4-1" hotGoods="{{goodsList}}" data-event-opts="{{[['^goodsListId',[['goGoodsDetail']]]]}}" bind:goodsListId="__e" class="data-v-46b43a70" bind:__l="__l"></goods-list><block wx:if="{{isTrue}}"><view class="over data-v-46b43a70">-----我是有底线的-----</view></block></view>

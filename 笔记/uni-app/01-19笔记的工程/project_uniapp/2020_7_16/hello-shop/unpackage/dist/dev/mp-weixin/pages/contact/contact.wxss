@@ -1,0 +1,21 @@
+
+.title image.data-v-476c8d48 {
+	width: 100%;
+	height: 320rpx;
+}
+.Telephone.data-v-476c8d48 {
+	font-size: 30rpx;
+	padding: 0 20rpx;
+}
+.Telephone text.data-v-476c8d48,
+.Telephone view.data-v-476c8d48 {
+	display: block;
+	line-height: 80rpx;
+	border-bottom: 2px solid #eee;
+}
+.mapAddress-map.data-v-476c8d48 {
+	width: 100%;
+	height: 750rpx;
+	margin-top: 20rpx;
+}
+

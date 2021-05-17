@@ -1,0 +1,1 @@
+<view>我是A组件，点击修改B组件的密码:<button data-event-opts="{{[['tap',[['goTestB',['$event']]]]]}}" bindtap="__e">修改密码</button></view>

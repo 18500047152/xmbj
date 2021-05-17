@@ -1,0 +1,6 @@
+<view class="view_index">
+    <image class="" src="{{canvas_Url}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+      
+    </image>
+    <canvas class="cas" canvas-id="ctx"></canvas>
+</view>

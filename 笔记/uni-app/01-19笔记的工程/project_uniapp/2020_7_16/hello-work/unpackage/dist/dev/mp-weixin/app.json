@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/message/message",
+    "pages/index/index",
+    "pages/cate/cate",
+    "pages/cart/cart"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#e4293c",
+    "backgroundColor": "#F8F8F8",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/home.png",
+        "selectedIconPath": "static/home_on.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "个人",
+        "iconPath": "static/user.png",
+        "selectedIconPath": "static/user_on.png"
+      },
+      {
+        "pagePath": "pages/cate/cate",
+        "text": "分类",
+        "iconPath": "static/cate.png",
+        "selectedIconPath": "static/cate_on.png"
+      }
+    ],
+    "color": "#ccc",
+    "selectedColor": "#e4293c",
+    "backgroundColor": "#007AFF"
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap87.json"
+}

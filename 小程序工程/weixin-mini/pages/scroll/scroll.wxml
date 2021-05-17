@@ -1,0 +1,7 @@
+<!--pages/scroll/scroll.wxml-->
+<view class='demo1'>
+滑动1
+</view>
+<view class='demo2'>
+滑动2
+</view>

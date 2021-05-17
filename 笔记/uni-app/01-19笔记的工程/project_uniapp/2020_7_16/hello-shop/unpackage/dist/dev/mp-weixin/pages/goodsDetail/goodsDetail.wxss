@@ -1,0 +1,41 @@
+
+page.data-v-21ea9296{
+	background-color: #eee;
+}
+.swiper.data-v-21ea9296 {
+	height: 700rpx;
+}
+.swiper-item-image.data-v-21ea9296 {
+	width: 100%;
+	height: 100%;
+}
+.price-name.data-v-21ea9296,.articleNumberAndStock.data-v-21ea9296{
+	background-color: #FFFFFF;
+	margin: 10rpx 0;
+	padding: 10rpx 20rpx;
+	line-height: 70rpx;
+}
+.xianJia.data-v-21ea9296{
+	font-size: 40rpx;
+	color: #B50E03;
+}
+.yuanJia.data-v-21ea9296{
+	font-size: 30rpx;
+	color: #999;
+	text-decoration:line-through;
+	margin-left: 20rpx;
+}
+.detail.data-v-21ea9296{
+	background-color: #fff;
+	padding: 10rpx 20rpx;
+	line-height: 70rpx;
+}
+.title.data-v-21ea9296{
+	border-bottom: 2rpx solid #eee;
+}
+/* 富文本内的图片,宽高比不对,找到富文本图片内的类名,把这个类名,放到全局App.vue中就ok 
+ .gomeImgLoad{
+	width: 100%;
+}
+ */
+

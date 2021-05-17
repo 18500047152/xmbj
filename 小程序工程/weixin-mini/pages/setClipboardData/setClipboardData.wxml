@@ -1,0 +1,3 @@
+<!--pages/setClipboardData/setClipboardData.wxml-->
+<view>{{fz}}</view>
+<view class="fz_view" bindtap="copyCode">复制</view>

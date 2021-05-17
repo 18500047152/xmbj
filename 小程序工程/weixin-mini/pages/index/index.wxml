@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- <picker mode="region" bindchange="bindRegionChange">
+            <text wx:if="{{region}}" class="f-30">{{region}}</text>
+            <text wx:else class="f-30 col-7">选择省、市、区</text>
+    </picker> -->
+<view class="box">我是首页↓学习->navigator跳转传参</view>
+<!-- 重点注意:switchTab跳转不能够传参 -->
+
+<!-- <navigator url="../user/user?name=小明&age=19" open-type="switchTab">
+      去user页面--switchTab跳转只能去tabBar页面
+  </navigator>
+
+  <navigator url="../user/user?name=小飞&age=30" open-type="reLaunch">
+      去user页面--reLaunch跳转能去任何页面
+  </navigator>
+
+  <navigator url="../for/for?name=小明&age=19" open-type="navigate">
+      去for页面--navigate跳转只能去非 tabBar页面
+  </navigator>
+
+ <navigator url="../for/for?name={{user.name}}&age={{user.age}}&xingbie=男" open-type="redirect">
+      去for页面--redirect跳转只能去非 tabBar页面
+  </navigator> -->
+
+ <view  class="goNavigator"  bindtap="Go1">
+      去user页面--switchTab跳转只能去tabBar页面
+  </view>
+
+  <view class="goNavigator"  bindtap="Go2">
+      去user页面--reLaunch跳转能去任何页面
+  </view>
+
+  <view  class="goNavigator" bindtap="Go3">
+      去for页面--navigate跳转只能去非 tabBar页面
+  </view>
+
+ <view  class="goNavigator" data-age="{{15}}" data-name="{{'小红'}}" bindtap="Go4">
+      去for页面--redirect跳转只能去非 tabBar页面
+  </view> 
+
+
+
+</view>

@@ -1,0 +1,3 @@
+<!--pages/globalData1/globalData1.wxml-->
+<view>globalData的全局名字已经在globalData页面进行修改,现在跳转到globalData1页面,再继续获取全局页面的名字</view>
+<view class="vie">我的名字是:{{name}}</view>

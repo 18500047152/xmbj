@@ -1,0 +1,1 @@
+<view class="data-v-293111e0"><news-list vue-id="061ca9b4-1" newsList="{{newsList}}" data-event-opts="{{[['^goNewsDetail',[['goNewsDetail']]]]}}" bind:goNewsDetail="__e" class="data-v-293111e0" bind:__l="__l"></news-list></view>

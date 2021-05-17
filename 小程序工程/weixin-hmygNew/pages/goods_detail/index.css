@@ -1,0 +1,90 @@
+/* pages/goos_detail/index.wxss */
+page {
+  padding-bottom: 100rpx;
+}
+.goods_detail_view swiper {
+  width: 100%;
+  height: calc(100vw*400/800);
+}
+.goods_detail_view swiper swiper-item {
+  width: 100%;
+  height: 100%;
+}
+.goods_detail_view swiper swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+.view_price {
+  padding: 15rpx;
+  font-size: 40rpx;
+  color: var(--moRenColor);
+}
+.view_all {
+  display: flex;
+  border-top: 2rpx solid #dedede;
+  border-bottom: 2rpx solid #dedede;
+  padding: 20rpx 0;
+}
+.view_all .view_name {
+  flex: 7;
+  display: flex;
+  align-items: center;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  border-right: 1rpx solid #999;
+}
+.view_all .view_shoucang {
+  flex: 2;
+  text-align: center;
+}
+.view_all .view_shoucang .icon-shoucang2 {
+  color: #eb4450;
+}
+.tuwenxiangqing .title {
+  font-size: 32rpx;
+  color: var(--moRenColor);
+  padding: 20rpx;
+}
+.gongJuLan_view {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  border-top: 1px solid #ac9797;
+  height: 100rpx;
+}
+.gongJuLan_view .gongJuLan_view_item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  border-right: 1px solid #ac9797;
+  position: relative;
+}
+.gongJuLan_view .gongJuLan_view_item button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.gongJuLan_view .gwc,
+.gongJuLan_view .ljgm {
+  flex: 1.25;
+}
+.gongJuLan_view .gwc {
+  background-color: #f3642f;
+}
+.gongJuLan_view .ljgm {
+  background-color: #eb4450;
+  border-right: none;
+}

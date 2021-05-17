@@ -1,0 +1,116 @@
+<!--pages/cart/index.wxml-->
+<view class="cart_view">
+    <!-- 收货地址 -->
+    <!-- 当收货地址不存在的时候?这个按钮显示 wx:if/对象哪怕是空对象,boolean类型也是true(可以拿对象里面的一个属性,进行判断)-->
+    <view class="cart_address" wx:if="{{!address_list.userName}}">
+        <button type="primary" plain bindtap="goAddress">
+            获取收货地址
+        </button>
+    </view>
+    <!-- 当收货地址存在的时候?咱们的详细信息显示 -->
+    <view class="cart_address_SHR" wx:else>
+        <view class="address_left">
+            <view class="address_name">
+                收货人:{{address_list.userName}}
+            </view>
+            <view class="address_address">
+                <!--  {{address_list.provinceName+address_list.cityName+address_list.countyName+address_list.detailInfo}} 这么写,比较长,可以把代码,放到wx-setStorageSync中,给地址绑定一个all属性,存在address_list对象中,拿的时候,直接点击,属性就好了存的时候处理,详情见js -->
+                {{address_list.all}}
+            </view>
+        </view>
+        <view class="address_right_mobil">
+            {{address_list.telNumber}}
+        </view>
+    </view>
+    <!--购物车样式-->
+    <view class="cart_box">
+        <view class="cart_title">购物车</view>
+        <view class="cart_content">
+        <!-- 当购物车数组长度为0,说明没有商品,给他一个提示框,让他去首页 -->
+           <block wx:if="{{cartNum.length>0?'true':false}}">
+                <view class="cart_content_item"
+            wx:for="{{cartNum}}"
+            wx:for-item="item"
+            wx:for-index="index"
+            wx:key="*this"
+            >
+                <!-- 复选框 全选反选-->
+                <view class="cart_left_fxk">
+                   
+                    <checkbox-group bindchange="header_Item"
+                    data-goods_id="{{item.goods_id}}"
+                    >
+                        <checkbox  
+                        checked="{{item.checked}}"
+                        >
+                          
+                        </checkbox>
+            
+                    </checkbox-group>
+                </view>
+                <!-- 商品图片 -->
+                <view class="cart_image">
+                    <navigator>
+                        <image class=""
+                            src="{{item.goods_small_logo}}"
+                            mode="widthFix">
+
+                        </image>
+                    </navigator>
+                </view>
+                <!-- 商品信息 -->
+                <view class="cart_spxx">
+                    <view class="shangpin_name">
+                       {{item.goods_name}}
+                    </view>
+                    <view class="shangpin_jiage">
+                        ¥:{{item.goods_price}}
+                    </view>
+                    <view class="shangpin_num_all">
+                        <view class="jian" bindtap = "num_jianJia" data-id="{{item.goods_id}}" data-operation="{{-1}}">-</view>
+                        <view class="shangpin_num">{{item.num}}</view>
+                        <view 
+                        class="jia" bindtap = "num_jianJia" data-id="{{item.goods_id}}" data-operation="{{1}}">+</view>
+                    </view>
+                </view>
+            </view>   
+           </block>     
+           <block wx:else>
+               <navigator  target="" url="../index/index" open-type="reLaunch">
+                    <view class="now_shangPin_view">还没有商品,赶紧选购吧~</view>
+               </navigator>
+           </block>
+        <!-- 我是content的结束标签 -->
+        </view>
+        
+    </view>
+<!-- 全选/结算底部工具栏 -->
+<view class="buttom_total">
+     <!-- 复选框 全选反选-->
+     <view class="cart_left_fxk">
+        <checkbox-group bindchange="header_Item_quanxuan">
+            <checkbox checked="{{allChecked}}">全选</checkbox>
+
+        </checkbox-group>
+    </view>
+    <!-- 合计 -->
+    <view class="heji">合计:</view>
+    <view class="jine">
+        <view class="renminbi">
+            ¥:{{allTotalPrice}}
+        </view>  
+        <view class="yunfei">
+            包含运费
+        </view>
+    </view>
+    <view class="jiesuan" bindtap="handlePay">
+       
+        结算[{{allNum}}]
+      
+
+    </view>
+
+</view>
+
+
+</view>

@@ -1,0 +1,61 @@
+//page是根元素(html标签)
+page{
+  height: 100%;
+}
+.box_view{
+  height: 100%;
+  .scroll_box{
+    //scroll_box的高度是page的高度,减去input搜索框的高度,搜索框的高度为90rpx;
+    //在less中 calc(100vh -90rpx )得到的结果不对,是因为less经过了编译,
+    //在less中的写法~'calc(100vh -90rpx )'
+    height: ~'calc(100% - 90rpx)';
+    display: flex;
+    .scroll_box_left{
+      // 变成伸缩盒子了,高度默认是百分百
+      flex: 2;
+      //左侧滚动条的样式
+      .scroll_box_left_content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(240, 233, 233);
+        padding: 20rpx 0;
+
+      }
+      // 左侧主题激活选中效果
+      .active{
+        color:var(--moRenColor);
+        background-color: white;
+        border-left: 5rpx solid "var(--moRenColor)";
+      }
+    }
+    .scroll_box_right{
+      flex: 5;
+     //这是右边内容的头部主题 
+    
+      .scroll_box_right_content_header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20rpx 0;       
+      }
+      //右边内容的头部内容
+      .scroll_box_right_content_body{
+          display: flex;
+          // 非常重要这个属性?允许排列的图标换行----------------------------------
+          flex-wrap: wrap;
+      .scroll_box_right_content_body_navigator{
+        width: 33%;
+        padding: 20rpx;
+        text-align: center;
+    //商品图片
+      .scroll_box_right_content_body_image{
+             width: 50%;
+        }
+    //商品名称
+   
+      }
+    }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+<view><view data-event-opts="{{[['tap',[['toIndex',['$event']]]]]}}" class="box" bindtap="__e">{{'我是首页index页面的组件-->这是父组件传过来的密码:'+newTitle+''}}</view></view>

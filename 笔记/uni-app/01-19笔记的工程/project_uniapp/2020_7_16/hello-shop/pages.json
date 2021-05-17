@@ -1,0 +1,96 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "优购首页"
+			}
+		}
+		, {
+			"path": "pages/information/information",
+			"style": {
+				"navigationBarTitleText": "优购资讯"
+			}
+		}, {
+			"path": "pages/cart/cart",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		}, {
+			"path": "pages/vip/vip",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		}, {
+			"path": "pages/goodsList/goodsList",
+			"style": {
+				"navigationBarTitleText": "商品列表",
+				"enablePullDownRefresh":true
+			}
+		}, {
+			"path": "pages/contact/contact",
+			"style": {
+				"navigationBarTitleText": "关于我们"
+			}
+		}, {
+			"path": "pages/pic/pic",
+			"style": {
+				"navigationBarTitleText": "社区图片"
+			}
+		}, {
+			"path": "pages/video/video",
+			"style": {
+				"navigationBarTitleText": "精彩视频"
+			}
+		}
+	    ,{
+            "path" : "pages/newsDetail/newsDetail",
+            "style" : {
+							"navigationBarTitleText":"新闻详情"
+						}
+        }
+        ,{
+            "path" : "pages/goodsDetail/goodsDetail",
+            "style" : {
+							"navigationBarTitleText":"商品详情"
+						}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "黑马商城",
+		"navigationBarBackgroundColor": "#B50E03",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/icon/home.png",
+				"selectedIconPath": "static/icon/home-active.png"
+			},
+			{
+				"pagePath": "pages/information/information",
+				"text": "资讯",
+				"iconPath": "static/icon/news.png",
+				"selectedIconPath": "static/icon/news-active.png"
+			},
+			{
+				"pagePath": "pages/cart/cart",
+				"text": "购物车",
+				"iconPath": "static/icon/cart.png",
+				"selectedIconPath": "static/icon/cart-active.png"
+			},
+			{
+				"pagePath": "pages/vip/vip",
+				"text": "会员",
+				"iconPath": "static/icon/member.png",
+				"selectedIconPath": "static/icon/member-active.png"
+			}
+		],
+		"color": "#ccc", //默认文字颜色
+		"selectedColor": "#B50E03" //选中后的文字颜色
+
+
+	}
+}

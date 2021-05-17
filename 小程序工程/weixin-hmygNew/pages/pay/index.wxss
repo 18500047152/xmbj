@@ -1,0 +1,116 @@
+/* pages/cart/index.wxss */
+page {
+  padding-bottom: 100rpx;
+}
+.cart_address_SHR {
+  display: flex;
+  border-bottom: 1rpx solid #eb4450;
+}
+.cart_address_SHR .address_left {
+  flex: 2;
+  border-right: 2rpx solid #ccc;
+}
+.cart_address_SHR .address_left .address_name,
+.cart_address_SHR .address_left .address_address {
+  padding: 10rpx;
+}
+.cart_address_SHR .address_right_mobil {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart_box .cart_title {
+  padding: 20rpx;
+  font-size: 36rpx;
+  color: var(--moRemColor);
+  border-bottom: 1rpx solid #eb4450;
+}
+.cart_box .cart_content .cart_content_item {
+  display: flex;
+  border-bottom: 1rpx solid #eb4450;
+}
+.cart_box .cart_content .cart_content_item .cart_image {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart_box .cart_content .cart_content_item .cart_image navigator {
+  width: 100%;
+  text-align: center;
+}
+.cart_box .cart_content .cart_content_item .cart_image navigator image {
+  width: 80%;
+}
+.cart_box .cart_content .cart_content_item .cart_spxx {
+  flex: 5;
+}
+.cart_box .cart_content .cart_content_item .cart_spxx .shangpin_name {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  color: #666;
+}
+.cart_box .cart_content .cart_content_item .cart_spxx .shangpin_jiage {
+  color: #eb4450;
+  font-size: 36rpx;
+  font-weight: 900;
+  float: left;
+  margin-top: 30rpx;
+}
+.cart_box .cart_content .cart_content_item .cart_spxx .shangpin_num_all {
+  padding: 10rpx 20rpx;
+  float: right;
+  display: flex;
+}
+.cart_box .cart_content .cart_content_item .cart_spxx .shangpin_num_all .shangpin_num {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rpx 20rpx;
+  margin-top: 30rpx;
+}
+.buttom_total {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  border-top: 1rpx solid #eb4450;
+}
+.buttom_total .heji,
+.buttom_total .jiesuan {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttom_total .heji {
+  justify-content: flex-end;
+}
+.buttom_total .jine {
+  flex: 1;
+  text-align: center;
+}
+.buttom_total .jine .renminbi {
+  color: #eb4450;
+  font-size: 40rpx;
+}
+.buttom_total .jine .yunfei {
+  font-size: 22rpx;
+}
+.buttom_total .jiesuan {
+  background-color: #eb4450;
+  color: white;
+}
+.now_shangPin_view {
+  width: 50%;
+  margin: 10rpx auto;
+  padding: 30rpx;
+  color: #eb4450;
+  border: 1px solid #ccc;
+}

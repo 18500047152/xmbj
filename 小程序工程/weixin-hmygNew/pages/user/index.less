@@ -1,0 +1,129 @@
+/* pages/user/index.wxss */
+page{
+   height: 100%;
+   background-color: #edece8;
+}
+.user_wiew{ 
+  height: 45%;
+  background-color: #eb4450;
+   overflow: hidden;
+  .user_view_allImage{
+    height: 100%;
+    position: relative;
+    .big_image{
+      height: 105%;
+      margin-right: 5rpx;
+      // css3滤镜-->高斯模糊效果
+     filter: blur(8rpx);
+    }
+    .samll_image_user{
+      // 小头像跟昵称
+      position: absolute;
+      right: 50%;
+      transform:translateX(50%);
+      top:30%;
+
+      text-align: center;
+      .samll_image{
+        width: 100rpx;
+        border-radius: 50%;
+
+      }
+      .user_name{
+        margin-top: 10rpx;
+        color: #fff;
+      }
+    }
+  }
+  .login_view{
+    width: 40%;   
+    margin:100rpx auto;
+    
+    
+    navigator{
+      width: 100%;
+      .login_button{
+        width: 100%;
+        //字的字间距
+          letter-spacing:10rpx;
+          border-radius: 10rpx;
+        }
+      }
+  }
+ 
+}
+// 这个是useruser页面的订单,首付款历史记录...大内容
+.user_content{
+  position: relative;
+ min-height:55%;
+  .user_content_main{
+    position: absolute;
+   // background-color: #fff;
+    width: 90%;
+    //水平居中
+    left: 50%;
+    transform: translateX(-50%);
+    top:-70rpx;
+  //  收藏,历史,关注,足迹 
+   .shouCang{
+     display: flex;
+     text-align: center;
+     background-color: #fff;
+     navigator{
+       flex: 1;
+       padding: 10rpx 0;
+       .num_ber{
+         color: #eb4450;
+       }
+     }
+//下面的蓝色是收藏结束标签
+   }
+   //订单页面
+   .my_order{
+     margin-top: 20rpx;
+     background-color: #fff;
+    .my_order_title{
+      padding: 20rpx;
+      border-bottom: 1rpx solid #ccc;
+    }
+    .my_order_content{
+     display: flex;
+     text-align: center;
+     navigator{
+      padding: 20rpx;
+       flex: 1;
+       padding: 10rpx 0;
+       
+       .view_name{
+          color: #333;
+       }
+
+     }
+    }
+  }
+  //收货地址管理
+  .view_address,.view_fenXiang{
+    margin: 15rpx 0;
+    padding: 15rpx;
+    background-color:#fff;
+    color: #666;
+  }
+  //联系客服//意见反馈//关于我们
+  .view_kefu_mobile,.view_yijian,.view_guanyu{
+    padding: 15rpx;
+     background-color:#fff;
+     color: #666;
+  }
+  .view_kefu_mobile{
+    overflow: hidden;
+  }
+  .left{
+    float: left;
+  }
+  .right{
+ 
+   float: right;
+    
+  }
+  }
+}

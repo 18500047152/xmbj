@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "我是个人页面",
+  "navigationBarBackgroundColor": "#F0AD4E",
+  "backgroundColor": "#000",
+  "enablePullDownRefresh": true,
+  "usingComponents": {}
+}

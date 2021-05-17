@@ -1,0 +1,50 @@
+
+.information.data-v-293111e0{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	padding: 10rpx 20rpx;
+	border-bottom: 2rpx solid #B50E03;
+}
+.left.data-v-293111e0 {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+}
+.left image.data-v-293111e0{
+	width: 200rpx;
+	height: 150rpx;
+}
+.right.data-v-293111e0{
+	-webkit-box-flex: 3;
+	-webkit-flex: 3;
+	        flex: 3;
+	padding: 0 10rpx 10rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	/* 让2个div,Y抽排布 */
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	/* 让两个div,两端对齐 */
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.title.data-v-293111e0{
+	font-size: 30rpx;
+}
+.time.data-v-293111e0{
+	font-size: 24rpx;
+	overflow: hidden;
+}
+.time-left.data-v-293111e0{
+	float: left;
+}
+.time-right.data-v-293111e0{
+	float: right;
+}
+
+

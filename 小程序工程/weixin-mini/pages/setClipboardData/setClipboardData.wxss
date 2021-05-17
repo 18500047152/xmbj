@@ -1,0 +1,4 @@
+/* pages/setClipboardData/setClipboardData.wxss */
+.fz_view{
+  color: #e4293c;
+}

@@ -1,0 +1,16 @@
+/* components/tabs/tabs.wxss */
+.tabs_title{
+  display: flex;
+  background-color: teal;
+  color: white;
+}
+.tabs_title view{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-bottom: 4rpx solid transparent;
+}
+.tabs_title .active{
+  border-bottom: 4rpx solid #e4293c;
+}

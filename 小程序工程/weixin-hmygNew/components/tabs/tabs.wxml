@@ -1,0 +1,19 @@
+<!--components/tabs/tabs.wxml-->
+
+<view class="view_box" >
+    <view class="view_title">
+          <view class="view_title_item {{item.isTrue?'active':''}}"
+          wx:for="{{fu_tabs}}"
+          wx:for-item="item"
+          wx:for-index="index"
+          wx:key="*this"
+          bind:tap="fu_index"
+          data-index="{{index}}"
+          >
+            {{item.neiRong}}
+          </view>
+    </view>
+    <view class="view_content">
+      <slot ></slot>
+    </view>
+</view>

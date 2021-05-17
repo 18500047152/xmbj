@@ -1,0 +1,92 @@
+<!-- pages/user/index.wxml -->
+<view class="user_wiew">
+  <!-- 大头像 加了滤镜--高斯模糊效果 -->
+  <view class="user_view_allImage" wx:if="{{userinfo.nickName}}">
+    <image class="big_image" src="{{userinfo.avatarUrl}}"></image>
+    <!-- 小头像跟昵称 -->
+    <view class="samll_image_user">
+      <image class="samll_image" src="{{userinfo.avatarUrl}}" mode="widthFix"></image>
+      <view class="user_name">{{userinfo.nickName}}</view>
+    </view>
+  </view>
+  <!-- 当缓存中没有登录信息的时候,清空头像,放入跳转按钮 -->
+  <view class="login_view" wx:else>
+    <navigator class="" target="" url="../login/index">
+      <button class="login_button" type="primary" plain="{{true}}">登录</button>
+    </navigator>
+  </view>
+</view>
+<!-- 这个是user页面的订单,首付款历史记录...大内容 -->
+<view class="user_content">
+  <view class="user_content_main">
+    <!-- 收藏,历史,关注,足迹 -->
+    <view class="shouCang">
+      <navigator target="" url="">
+        <view class="num_ber">0</view>
+        <view class="shoucang_dianpu">收藏店铺</view>
+      </navigator>
+      <navigator target="" url="../collect/index">
+        <view class="num_ber">{{collectNums}}</view>
+        <view class="shoucang_dianpu">收藏商品</view>
+      </navigator>
+      <navigator target="" url="">
+        <view class="num_ber">0</view>
+        <view class="shoucang_dianpu">关注商品</view>
+      </navigator>
+      <navigator target="" url="">
+        <view class="num_ber">0</view>
+        <view class="shoucang_dianpu">历史足迹</view>
+      </navigator>
+    </view>
+    <!-- 我的订单 -->
+    <view class="my_order">
+      <!-- 我的订单头部 -->
+      <view class="my_order_title">我的订单</view>
+      <view class="my_order_content">
+        <!-- 点击navigator链接跳转到订单页面?传参type=1(全部订单)传参type=2(代付款)传参type=3(待收货)type值是后台服务器给的 -->
+        <navigator class="" target="" url="../order/index?type=1">
+          <view class="iconfont icon-kefu"></view>
+          <view class="view_name">全部订单</view>
+        </navigator>
+        <navigator class="" target="" url="../order/index?type=2">
+          <view class="iconfont icon-kefu"></view>
+          <view class="view_name">代付款</view>
+        </navigator>
+        <navigator class="" target="" url="../order/index?type=3">
+          <view class="iconfont icon-kefu"></view>
+          <view class="view_name">待收货</view>
+        </navigator>
+        <navigator class="" target="" url="">
+          <view class="iconfont icon-kefu"></view>
+          <view class="view_name">退款/退货</view>
+        </navigator>
+      </view>
+    </view>
+    <!-- 收货地址管理 -->
+    <view class="view_address">
+      收货地址管理
+    </view>
+    <!-- 联系客服 -->
+     <view class="view_kefu_mobile">
+      <view class="left" >
+        联系客服
+      </view>
+      <view class="right" >
+        110-400-8806
+      </view>
+    </view>
+    <!-- -->
+     <navigator class="view_yijian" url="../feedback/index">
+<!--意见反馈功能可以用button按钮,微信小程序内置的功能  <button open-type="feedback">意见反馈</button> -->
+     意见反馈
+    </navigator>
+    <!-- 关于我们 -->
+     <view class="view_guanyu">
+      关于我们
+    </view>
+    <!-- 把小程序分享他人 -->
+     <view class="view_fenXiang">
+      把小程序分享他人
+    </view>
+  </view>
+</view>

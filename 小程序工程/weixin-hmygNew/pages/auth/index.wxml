@@ -1,0 +1,8 @@
+<!--pages/auth/index.wxml-->
+<!-- 获取用户信息 -->
+
+<view id="view_box" hover-class="none" hover-stop-propagation="false">
+  <button class="getUserInfo_button" type="primary" plain="{{true}}" open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">
+  授权按钮
+</button>
+</view>

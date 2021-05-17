@@ -1,0 +1,53 @@
+.view_main {
+  background-color: #f3f4f6;
+}
+.view_main .view_title {
+  padding: 20rpx 0;
+  overflow: hidden;
+}
+.view_main .view_title view {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx;
+  border: 1rpx solid #ccc;
+  margin-right: 20rpx;
+  background-color: #fff;
+}
+.view_main .view_title .all_shangpin {
+  margin-left: 20rpx;
+}
+.view_main .view_title .active {
+  color: #eb4450;
+}
+.view_main .view_content .tabs_navigator {
+  display: flex;
+  border-bottom: 1px solid #ad9393;
+}
+.view_main .view_content .tabs_navigator .view_left {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.view_main .view_content .tabs_navigator .view_left image {
+  width: 70%;
+}
+.view_main .view_content .tabs_navigator .view_right {
+  flex: 3;
+  line-height: 60rpx;
+}
+.view_main .view_content .tabs_navigator .view_right .shangpin_mingcheng {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  margin-top: 40rpx;
+}
+.view_main .view_content .tabs_navigator .view_right .shangpin_jiage {
+  color: var(--moRenColor);
+  font-size: 32rpx;
+}

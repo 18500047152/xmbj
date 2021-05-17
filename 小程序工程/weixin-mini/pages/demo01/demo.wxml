@@ -1,0 +1,12 @@
+<!--pages/demo01/demo.wxml-->
+<view>
+<zujian aaa="123" tabs="{{tabs}}" bindfuIndex="zinewIndex">
+
+
+    <block wx:if="{{tabs[0].isTrue}}">0</block>
+    <block wx:elif="{{tabs[1].isTrue}}">1</block>
+    <block wx:elif="{{tabs[2].isTrue}}">2</block>
+    <block wx:else="{{tabs[3].isTrue}}">3</block>
+
+</zujian>
+</view>

@@ -1,0 +1,6 @@
+<!--pages/newtab/index.wxml-->
+<tabs fu_tabs="{{tabs}}" bindsonIndex="sonIndex"
+  
+  >
+   
+  </tabs>

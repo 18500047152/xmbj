@@ -1,0 +1,60 @@
+//轮播图样式
+.swiper_view {
+  swiper {
+    width: 100%;
+    height: calc(100vw*340/750);
+
+    navigator {
+      width: 100%;
+      height: 100%;
+
+      image {
+        width: 100%;
+        
+      }
+    }
+  }
+}
+// 导航页样式
+.cate_view{
+display: flex;
+.cate_view_item{
+  flex: 1;
+  navigator{
+    padding: 20rpx;
+    image{
+      width: 100%;
+    }
+  }
+} 
+}
+//导航页下面的楼层模块开始
+.floor_view{
+  overflow: hidden;
+  .image_header{
+    width: 100%;
+    margin: 10rpx 0;
+  }
+  navigator{
+    // clear: both;
+    // overflow: hidden;
+    float: left;
+    width: 33.33%;
+    border-left: 10rpx solid #ffffff;
+    
+    //选择器后四位
+   &:nth-last-child(-n+4){
+     height: 33.33vw * 386 / 232 / 2;
+      border-bottom: 10rpx solid #ffffff;
+   }
+   //2-3超链接(效果没有实现)
+   //&:nth-child(2),&:nth-child(3){
+   // border-bottom: 10rpx solid #ffffff;
+   //}
+   
+  image{ 
+    width: 100%;
+    height: 100%;
+  }
+}
+}

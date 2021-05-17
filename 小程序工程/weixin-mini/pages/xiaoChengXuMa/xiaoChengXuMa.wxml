@@ -1,0 +1,25 @@
+<!--pages/xiaoChengXuMa/xiaoChengXuMa.wxml-->
+<view class="zizujian">下面↓是我的子组件</view>
+<!-- 
+  当前页面是父页面,tabs是子组件--父对子传参
+一:找到子组件标签,定义人员属性名[如:aaa]="要传给子元素的值[如:'a123a']"
+二:在tabs.js中的properties对象内进行接收
+ -->
+<tabs tabs="{{tabs}}" bindsonMsg="headerSonMsg">
+<!-- 因为子组件中添加了插槽功能,所以子组件tabs标签中间,可以写代码了
+-->
+<block wx:if="{{tabs[0].isTrue}}">
+  我是首页内容
+</block>
+<block wx:if="{{tabs[1].isTrue}}">
+  我是原创内容
+</block>
+<block wx:if="{{tabs[2].isTrue}}">
+  我是分类内容
+</block>
+<block wx:if="{{tabs[3].isTrue}}">
+  我是关于内容
+</block>
+
+
+</tabs>

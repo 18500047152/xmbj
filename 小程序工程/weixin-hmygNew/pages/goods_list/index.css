@@ -1,0 +1,31 @@
+/* pages/goods_list/index.wxss */
+.tabs_first .tabs_navigator {
+  display: flex;
+  border-bottom: 1px solid #ad9393;
+}
+.tabs_first .tabs_navigator .view_left {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tabs_first .tabs_navigator .view_left image {
+  width: 70%;
+}
+.tabs_first .tabs_navigator .view_right {
+  flex: 3;
+  line-height: 60rpx;
+}
+.tabs_first .tabs_navigator .view_right .shangpin_mingcheng {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  margin-top: 40rpx;
+}
+.tabs_first .tabs_navigator .view_right .shangpin_jiage {
+  color: var(--moRenColor);
+  font-size: 32rpx;
+}
