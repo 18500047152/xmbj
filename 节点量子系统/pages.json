@@ -1,0 +1,123 @@
+{
+    "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        // {
+        //     "path": "pages/login/home",
+        //     "style": {}
+        // },
+        {
+            "path": "pages/index/index"
+        }, {
+            "path": "pages/extension/index"
+        }, {
+            "path": "pages/list/node"
+        }, {
+            "path": "pages/list/shop"
+        }, {
+            "path": "pages/list/agent"
+        }, {
+            "path": "pages/list/search"
+        }, {
+            "path": "pages/index/withdrawal"
+        }, {
+            "path": "pages/index/withdrawalDetail"
+        }, {
+            "path": "pages/index/myIncome"
+        }, {
+            "path": "pages/my/index"
+        }, {
+            "path": "pages/login/login"
+        }, {
+            "path": "pages/news/list",
+            "style": {}
+        }, {
+            "path": "pages/news/commision",
+            "style": {}
+        }, {
+            "path": "pages/news/invite",
+            "style": {}
+        }, {
+            "path": "pages/news/notice",
+            "style": {}
+        }, {
+            "path": "pages/news/detail",
+            "style": {}
+        }, {
+            "path": "pages/news/news",
+            "style": {}
+        }, {
+            "path": "pages/news/newsearch",
+            "style": {}
+        }, {
+            "path": "pages/news/contentDetail",
+            "style": {}
+        }, {
+            "path": "pages/news/videoDetail",
+            "style": {}
+        }, {
+            "path": "pages/my/point",
+            "style": {}
+        }, {
+            "path": "pages/my/give",
+            "style": {}
+        }, {
+            "path": "pages/my/minge",
+            "style": {}
+        }, {
+            "path": "pages/my/operate",
+            "style": {}
+        }, {
+            "path": "pages/my/service",
+            "style": {}
+        }, {
+            "path": "pages/my/content",
+            "style": {}
+        }, {
+            "path": "pages/withdraw/withdrawMoney",
+            "style": {}
+        }, {
+            "path": "pages/withdraw/withdrawDetaile",
+            "style": {}
+        }, {
+            "path": "pages/withdraw/withdrawBill",
+            "style": {}
+        }, {
+            "path": "pages/withdraw/withdrawAccount",
+            "style": {}
+        }, {
+            "path": "pages/withdraw/images",
+            "style": {}
+        }
+
+    ],
+    "tabBar": {
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "static/shouye.png",
+                "selectedIconPath": "static/shouye1.png"
+            },
+            {
+                "pagePath": "pages/news/news",
+                "text": "内参",
+                "iconPath": "static/neican.png",
+                "selectedIconPath": "static/neican1.png"
+            },
+            {
+                "pagePath": "pages/my/index",
+                "text": "我的",
+                "iconPath": "static/user.png",
+                "selectedIconPath": "static/user1.png"
+            }
+
+        ],
+        "color": "#9a9a9a", //默认文字颜色
+        "backgroundColor": "#1c1d21",
+        // "borderStyle":"#1c1d21"
+        "selectedColor": "#ccc",
+        "spacing": "7",
+        "height": "52"
+    },
+    "globalStyle": {
+        "navigationStyle": "custom"
+    }
+}

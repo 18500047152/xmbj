@@ -1,0 +1,82 @@
+
+page {
+	width: 100%;
+	height: 100%;
+	background-image: url(/static/login.png) !important;
+	background-size: 100% 100%;
+}
+.status_bar {
+	height: 25px;
+	width: 100%;
+}
+.loginBox {
+	width: 625rpx;
+	height: 250rpx;
+	margin: 166.66rpx auto 0;
+}
+.passInput,
+.phoneInput {
+	display: inline-block;
+	width: 350rpx;
+	height: 89.44rpx;
+	margin-left: 34.72rpx;
+}
+.PhoneBox,
+.passBox {
+	height: 125rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	border-bottom: 0.69rpx solid #13234c;
+	color: #4c5c85;
+	font-size: 31.94rpx;
+}
+.passBox {
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.passBox_ {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.phonePClass,
+.passPClass {
+	color: #4c5c85;
+	font-size: 31.94rpx;
+}
+.verifyText {
+	color: #12254c;
+}
+.icon-shouji,
+.icon-mima {
+	color: #081838;
+	font-size: 38.19rpx;
+}
+.actived {
+	color: #eaf1ff;
+}
+.icon-actived,.actived-verifyText {
+	color: #227eea;
+}
+.loginBtn {
+	margin-top: 55.55rpx;
+	width: 625rpx;
+	line-height: 100.69rpx;
+	color: #4c5c85;
+	font-size: 31.94rpx;
+	font-weight: bold;
+	background-color: #081838;
+}
+.actived-loginBtn {
+	color: #eaf1ff;
+	background-color: #22376b;
+}
+

@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/extension/index",
+    "pages/list/node",
+    "pages/list/shop",
+    "pages/list/agent",
+    "pages/list/search",
+    "pages/index/withdrawal",
+    "pages/index/withdrawalDetail",
+    "pages/index/myIncome",
+    "pages/my/index",
+    "pages/login/login",
+    "pages/news/list",
+    "pages/news/commision",
+    "pages/news/invite",
+    "pages/news/notice",
+    "pages/news/detail",
+    "pages/my/point",
+    "pages/my/give",
+    "pages/my/minge",
+    "pages/withdraw/withdrawMoney",
+    "pages/withdraw/withdrawDetaile",
+    "pages/withdraw/withdrawBill",
+    "pages/withdraw/withdrawAccount",
+    "pages/withdraw/images"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap16.json"
+}

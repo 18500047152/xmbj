@@ -1,0 +1,141 @@
+
+page {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+.body {
+    background-color: #000000;
+}
+.extractBox {
+    width: 694.44rpx;
+    margin: 10rpx auto 0;
+    background-color: #030f22;
+    border-radius: 10rpx;
+}
+.accountName,
+.account,
+.blankName {
+    height: 104.16rpx;
+    width: 659.72rpx;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    color: #dee1ef;
+    font-size: 30.55rpx;
+}
+.accountName,
+.account {
+    border-bottom: 0.69rpx solid #13234c;
+}
+.inputName,
+.blankAccount {
+    width: 447.22rpx;
+    text-align: right;
+}
+.placeClass {
+    text-align: right;
+    font-size: 30.55rpx;
+}
+.cashBox {
+    width: 694.44rpx;
+    margin: 20.13rpx auto;
+    background-color: #030f22;
+    border-radius: 15rpx;
+    font-size: 30.55rpx;
+}
+.cashName,
+.cashAccount {
+    margin: auto;
+    width: 640rpx;
+    padding: 32rpx 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+}
+.cashName {
+    border-bottom: 0.69rpx solid rgb(229, 229, 229);
+}
+.cashNameInput,
+.cashAccountInput {
+    width: 467.77rpx;
+}
+.withdrawalAmount {
+    display: block;
+    padding: 34.72rpx 0;
+    font-size: 27.77rpx;
+    color: #dee1ef;
+}
+.amount {
+    padding-bottom: 15rpx;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+    border-bottom: 0.69rpx solid #13234c;
+    position: relative;
+}
+.amountLogo {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+            align-items: flex-end;
+    font-size: 60.27rpx;
+    color: #dee1ef;
+}
+.money {
+    position: absolute;
+    left: 65rpx;
+    bottom: 16rpx;
+    font-size: 61.11rpx;
+    color: #dee1ef;
+}
+.holderMoney {
+    font-size: 27.77rpx;
+    color: #4c5c85;
+}
+.amountTips {
+    padding: 31.25rpx 0 52.08rpx 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    color: #4c5c85;
+    font-size: 27.77rpx;
+}
+.allAmount {
+    color: #68fffe;
+    margin-left: 15rpx;
+}
+.btn {
+    background-color: #0a1a3c;
+    color: #4c5c85;
+    font-size: 31.94rpx;
+}
+.extract {
+    color: #eceaf8;
+    background-color: #152c65;
+}
+.uni-picker{
+    background-color: #000000;
+    border-radius: 20rpx;
+}
+
+
